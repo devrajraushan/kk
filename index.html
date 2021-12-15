@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="password" id="pass" placeholder="Password">
+    <input type="checkbox" id="check" onclick="call()">
+    <span id="show">Show Password</span>
+
+    <script>
+        var x = document.getElementById("pass");
+        var y = document.getElementById("check");
+        var z = document.getElementById("show");
+
+        function call()
+        {
+            y.checked == true ? x.type = "text" : x.type = "password";
+            y.checked == true ? z.innerHTML = "Hide Password" : z.innerHTML = "Show Password";
+        }
+    </script>
+
+
+</body>
+</html>
